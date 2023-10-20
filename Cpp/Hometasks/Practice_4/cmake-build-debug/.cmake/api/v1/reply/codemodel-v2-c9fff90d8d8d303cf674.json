@@ -19,7 +19,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -31,14 +32,15 @@
 					[
 						0
 					],
-					"name" : "Practice_3",
+					"name" : "Practice_4",
 					"targetIndexes" : 
 					[
 						0,
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -47,36 +49,43 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-1-Debug-241ba57bd24ca7e6f9ac.json",
+					"jsonFile" : "target-1-Debug-df0aa5514b1dfd12cf21.json",
 					"name" : "1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-2-Debug-8f44acd08596fff877b4.json",
+					"jsonFile" : "target-2-Debug-baf6221610ef778dd56d.json",
 					"name" : "2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-3-Debug-b8f651ae241ef182e895.json",
+					"jsonFile" : "target-3-Debug-17d7d7ee7df04f459c6a.json",
 					"name" : "3",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-4-Debug-abe01ef89bfce363dc97.json",
+					"jsonFile" : "target-4-Debug-0b5098cdc8068c94dbe0.json",
 					"name" : "4",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "5::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-5-Debug-13f51d589269802e0878.json",
+					"jsonFile" : "target-5-Debug-1ab30ad197717c5d40b3.json",
 					"name" : "5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-6-Debug-75cf42ab8a4089bc75dd.json",
+					"name" : "6",
 					"projectIndex" : 0
 				}
 			]
@@ -85,8 +94,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug",
-		"source" : "D:/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3"
+		"build" : "D:/CLionProjects/MIIGAIK-Informatics/Cpp/Hometasks/Practice_4/cmake-build-debug",
+		"source" : "D:/CLionProjects/MIIGAIK-Informatics/Cpp/Hometasks/Practice_4"
 	},
 	"version" : 
 	{

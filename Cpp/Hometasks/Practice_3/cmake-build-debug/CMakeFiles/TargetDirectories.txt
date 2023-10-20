@@ -1,7 +1,7 @@
-D:/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/1.dir
-D:/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/2.dir
-D:/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/3.dir
-D:/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/4.dir
-D:/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/5.dir
-D:/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/CLionProjects/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/1.dir
+D:/CLionProjects/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/2.dir
+D:/CLionProjects/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/3.dir
+D:/CLionProjects/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/4.dir
+D:/CLionProjects/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/5.dir
+D:/CLionProjects/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/CLionProjects/MIIGAIK-Informatics/Cpp/Hometasks/Practice_3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
