@@ -1,0 +1,7 @@
+/home/artemii/Projects/MIIGAIK-Informatics/Cpp/Hometasks/Homework_1/cmake-build-debug/CMakeFiles/1.dir
+/home/artemii/Projects/MIIGAIK-Informatics/Cpp/Hometasks/Homework_1/cmake-build-debug/CMakeFiles/2.dir
+/home/artemii/Projects/MIIGAIK-Informatics/Cpp/Hometasks/Homework_1/cmake-build-debug/CMakeFiles/3.dir
+/home/artemii/Projects/MIIGAIK-Informatics/Cpp/Hometasks/Homework_1/cmake-build-debug/CMakeFiles/4.dir
+/home/artemii/Projects/MIIGAIK-Informatics/Cpp/Hometasks/Homework_1/cmake-build-debug/CMakeFiles/5.dir
+/home/artemii/Projects/MIIGAIK-Informatics/Cpp/Hometasks/Homework_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/artemii/Projects/MIIGAIK-Informatics/Cpp/Hometasks/Homework_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
