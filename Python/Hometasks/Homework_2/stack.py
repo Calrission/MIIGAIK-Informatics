@@ -14,7 +14,9 @@ class Stack:
 
 if __name__ == "__main__":
     stack = Stack(10, 20, 30, 40)
+    print(stack)
     print(stack.pop())
+    print(stack)
     print(stack.pop())
     print(stack)
     stack.push("elem")
