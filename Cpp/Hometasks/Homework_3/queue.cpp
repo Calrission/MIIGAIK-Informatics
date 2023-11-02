@@ -10,8 +10,8 @@ void enqueue(int elem){
 }
 
 int dequeue(){
-    int elem = queue.back();
-    queue.pop_back();
+    int elem = queue.front();
+    queue.erase(queue.begin());
     return elem;
 }
 
