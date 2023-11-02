@@ -2,7 +2,9 @@
 
 // Дополните код программы. Организуйте ввод массива с клавиатуры. См. Слайд 70-71
 
-int sumOfEvenNumbers(ЧТО ЖЕ СЮДА ВПИСАТЬ?) {
+using namespace std;
+
+int sumOfEvenNumbers(const int arr[], int& length) {
     int sum = 0;
     for (int i = 0; i < length; i++) {
         if (arr[i] % 2 == 0) {
