@@ -16,10 +16,16 @@
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>665</height>
+   </size>
+  </property>
   <property name="maximumSize">
    <size>
-    <width>16777215</width>
-    <height>16777204</height>
+    <width>400</width>
+    <height>665</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -73,7 +79,7 @@ QPushButton:pressed{
 }</string>
       </property>
       <property name="text">
-       <string>2+2=</string>
+       <string/>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -99,7 +105,7 @@ QPushButton:pressed{
 }</string>
       </property>
       <property name="text">
-       <string>4</string>
+       <string/>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -154,7 +160,7 @@ QPushButton:pressed{
        </widget>
       </item>
       <item row="4" column="0">
-       <widget class="QPushButton" name="btn_change">
+       <widget class="QPushButton" name="exec_change">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
           <horstretch>0</horstretch>
@@ -180,7 +186,7 @@ QPushButton:pressed{
        </widget>
       </item>
       <item row="0" column="2">
-       <widget class="QPushButton" name="oper_btn_backspace">
+       <widget class="QPushButton" name="exec_btn_backspace">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
           <horstretch>0</horstretch>
@@ -235,7 +241,7 @@ QPushButton:pressed{
        </widget>
       </item>
       <item row="0" column="0">
-       <widget class="QPushButton" name="oper_btn_c">
+       <widget class="QPushButton" name="exec_btn_c">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
           <horstretch>0</horstretch>
@@ -277,7 +283,7 @@ QPushButton:pressed{
        </widget>
       </item>
       <item row="4" column="3">
-       <widget class="QPushButton" name="oper_btn_so">
+       <widget class="QPushButton" name="exec_btn_so">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
           <horstretch>0</horstretch>
@@ -293,7 +299,7 @@ QPushButton:pressed{
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QPushButton" name="oper_btn_ce">
+       <widget class="QPushButton" name="exec_btn_ce">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
           <horstretch>0</horstretch>

@@ -17,28 +17,25 @@ public:
     ~MainWindow();
 
 protected:
-    void clickNumButton();
-    void handleNewNumber(int num);
+    void handleNewNumber(const QString &num);
+    void handleNewOperator(const QString &oper);
     QList<QPushButton*> numButtons;
-    void setClickToNumButtons();
+    QList<QPushButton*> operatorButtons;
+    void connectHandlersToButtons();
+    QString calculateExpression(const QString &expression);
+
 
 private slots:
 
-    void on_oper_btn_c_clicked();
+    void on_exec_btn_c_clicked();
 
-    void on_oper_btn_ce_clicked();
+    void on_exec_btn_ce_clicked();
 
-    void on_oper_btn_backspace_clicked();
+    void on_exec_btn_backspace_clicked();
 
-    void on_oper_btn_divis_clicked();
+    void on_exec_btn_so_clicked();
 
-    void on_oper_btn_multi_clicked();
-
-    void on_oper_btn_minus_clicked();
-
-    void on_oper_btn_sum_clicked();
-
-    void on_oper_btn_so_clicked();
+    void on_exec_change_clicked();
 
 private:
     Ui::MainWindow *ui;
