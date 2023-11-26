@@ -70,8 +70,8 @@ void MainWindow::on_exec_btn_backspace_clicked(){
 
 void MainWindow::on_exec_btn_so_clicked(){
     QString exoression = ui->answer->text();
-    ui->expression->setText(exoression);
-    QString answer = calculateExpression(exoression);
+    ui->expression->setText();
+    QString answer = calculateExpression(ui->answer->text());
     ui->answer->setText(answer);
 }
 
