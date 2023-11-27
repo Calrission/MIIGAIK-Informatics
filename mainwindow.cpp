@@ -4,12 +4,14 @@
 
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow){
     ui->setupUi(this);
+
     numButtons = {
         ui->btn_7, ui->btn_8, ui->btn_9,
         ui->btn_4, ui->btn_5, ui->btn_6,
         ui->btn_1, ui->btn_2, ui->btn_3,
         ui->btn_0, ui->btn_dot
     };
+
     operatorButtons = {
         ui->oper_btn_sum, ui->oper_btn_minus,
         ui->oper_btn_multi, ui->oper_btn_divis
@@ -69,9 +71,9 @@ void MainWindow::on_exec_btn_backspace_clicked(){
 }
 
 void MainWindow::on_exec_btn_so_clicked(){
-    QString exoression = ui->answer->text();
-    ui->expression->setText();
-    QString answer = calculateExpression(ui->answer->text());
+    QString expression = ui->answer->text();
+    ui->expression->setText(expression);
+    QString answer = calculateExpression(expression);
     ui->answer->setText(answer);
 }
 
