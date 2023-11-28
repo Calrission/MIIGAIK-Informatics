@@ -92,36 +92,38 @@ void MainWindow::on_exec_change_clicked()
 }
 
 QString MainWindow::calculateExpression(const QString &expression) {
-    // Выводим токены для отладки
-    QStringList tokens = expression.split(" ");
     QList<QString> numbers;
     QList<QString> operators;
-    for (const QString &token : tokens) {
+
+    // I этап. Определение составляющих выражения.
+    QStringList tokens = expression.split(" ");
+    for (const QString &token: tokens) {
         if (token != "+" && token != "-" && token != "*" && token != "/") {
             // Если токен не является оператором, добавляем его в список чисел
             numbers.push_back(token);
         } else {
-            // Если токен - оператор, добавляем его в список операторов
+            // Иначе это оператор, добавляем его в список операторов
             operators.push_back(token);
         }
     }
-    // Выполняем операции умножения и деления
+
+    // II этап. Выполняем операции умножения и деления.
     for (int i = 0; i < operators.size(); ++i) {
         if (operators.at(i) == "*" || operators.at(i) == "/") {
             // Извлекаем первое число
-            double a = numbers.at(i).toDouble();
+            double first = numbers[i].toDouble();
             // Извлекаем оператор
-            QString op = operators.at(i);
+            QString oper = operators[i];
             // Извлекаем второе число
-            double b = numbers.at(i + 1).toDouble();
+            double second = numbers[i + 1].toDouble();
             // Выполняем операцию в зависимости от оператора
-            if (op == "*") {
-                numbers[i] = QString::number(a * b);
-            } else if (op == "/") {
-                if (b == 0.0) {
+            if (oper == "*") {
+                numbers[i] = QString::number(first * second);
+            } else if (oper == "/") {
+                if (second == 0.0) {
                     return "Error: Division by zero";
                 }
-                numbers[i] = QString::number(a / b);
+                numbers[i] = QString::number(first / second);
             }
             // Удаляем использованный оператор и второе число
             operators.removeAt(i);
@@ -130,25 +132,26 @@ QString MainWindow::calculateExpression(const QString &expression) {
             --i;
         }
     }
-    // Выполняем операции сложения и вычитания
+
+    // III этап. Выполняем операции сложения и вычитания.
     while (!operators.isEmpty()) {
         // Извлекаем первое число
-        double a = numbers.takeFirst().toDouble();
+        double first = numbers.takeFirst().toDouble();
         // Извлекаем оператор
-        QString op = operators.takeFirst();
+        QString oper = operators.takeFirst();
         // Извлекаем второе число
-        double b = numbers.takeFirst().toDouble();
+        double second = numbers.takeFirst().toDouble();
         // Выполняем операцию в зависимости от оператора
-        if (op == "+") {
-            numbers.push_front(QString::number(a + b));
-        } else if (op == "-") {
-            numbers.push_front(QString::number(a - b));
+        if (oper == "+") {
+            numbers.push_front(QString::number(first + second));
+        } else if (oper == "-") {
+            numbers.push_front(QString::number(first - second));
         }
     }
-    // В списке должен остаться один элемент - результат выражения
+
+    // IV этап. Определяем рузльтат.
     if (numbers.size() == 1) {
-        QString result = numbers.takeFirst();
-        return result;
+        return numbers[0];
     } else {
         return "Error";
     }
