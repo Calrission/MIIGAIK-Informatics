@@ -45,17 +45,20 @@ using namespace std;
 
 class Cat {
     protected:
-        const string& breed;
-        const string& color;
+        string breed;
+        string color;
 
     public:
-        Cat(const string& breed, const string& color): color(color), breed(breed){}
+        Cat(string& breed, string& color){
+            this->breed = breed;
+            this->color = color;
+        }
 
-        const string& getBreed() {
+        string& getBreed() {
             return breed;
         }
 
-        const string& getColor() {
+        string& getColor() {
             return color;
         }
 
@@ -66,7 +69,7 @@ class Cat {
 
 class Potat: public Cat{
     protected:
-        const string& name;
+        string name;
         int age;
         bool curiosity;
 
@@ -92,13 +95,13 @@ class Potat: public Cat{
         }
 
 
-    Potat(const string& breed, const string& color, const string& name, int age, bool curiosity = true):
+    Potat(string& breed, string& color, string& name, int age, bool curiosity = true):
         Cat(breed, color), name(name), age(age), curiosity(curiosity){}
 };
 
 class LongTeen: public Potat {
     public:
-        LongTeen(const string& breed, const string& color, const string& name, int age): Potat(breed, color, name, age) {}
+        LongTeen(string& breed, string& color, string& name, int age): Potat(breed, color, name, age) {}
 
         void walk(){
             cout << "Кот подросток по кличке " << name << " на прогулке" << endl;
@@ -111,7 +114,7 @@ class LongTeen: public Potat {
 
 class BigLong: public LongTeen{
     public:
-        BigLong(const string& breed, const string& color, const string& name, int age): LongTeen(breed, color, name, age) {}
+        BigLong(string& breed, string& color, string& name, int age): LongTeen(breed, (string &) color, name, age) {}
 
         void sleep() override {
             cout << "Большая длинная кошка по кличке " << name << " спит" << endl;
@@ -120,7 +123,7 @@ class BigLong: public LongTeen{
 
 class BigPotat: public BigLong{
     public:
-        BigPotat(const string& breed, const string& color, const string& name, int age): BigLong(breed, color, name, age) {}
+        BigPotat(string& breed, string& color, string& name, int age): BigLong(breed, color, name, age) {}
 
         void sleep() override {
             cout << "Большая картошка по кличке" << name << " спит" << endl;
@@ -128,10 +131,10 @@ class BigPotat: public BigLong{
 };
 
 int main() {
-    Potat myPotat("Мейн-кун", "Черный", "Барсик", 1);
-    LongTeen myLongTeen("Сиамская", "Коричневый", "Том", 5);
-    BigLong myBigLong("Британская", "Серый", "Мурзик", 8);
-    BigPotat myBigPotat("Персидская", "Белый", "Васька", 10);
+    Potat myPotat = Potat((string &) "Мейн-кун", (string &) "Черный",(string &) "Барсик", 1);
+    LongTeen myLongTeen = LongTeen((string &) "Сиамская", (string &) "Коричневый",(string &) "Том", 5);
+    BigLong myBigLong = BigLong((string &) "Британская", (string &)"Серый", (string &) "Мурзик", 8);
+    BigPotat myBigPotat = BigPotat((string &) "Персидская", (string &)"Белый", (string &) "Васька", 10);
 
     myPotat.play();
     myLongTeen.walk();
