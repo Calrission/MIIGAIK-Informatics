@@ -134,10 +134,10 @@ class BigPotat: public BigLong{
 };
 
 int main() {
-    Potat myPotat = Potat((string &) "Мейн-кун", (string &) "Черный",(string &) "Барсик", 1);
-    LongTeen myLongTeen = LongTeen((string &) "Сиамская", (string &) "Коричневый",(string &) "Том", 5);
-    BigLong myBigLong = BigLong((string &) "Британская", (string &)"Серый", (string &) "Мурзик", 8);
-    BigPotat myBigPotat = BigPotat((string &) "Персидская", (string &)"Белый", (string &) "Васька", 10);
+    Potat myPotat = Potat("Мейн-кун", "Черный","Барсик", 1);
+    LongTeen myLongTeen = LongTeen( "Сиамская",  "Коричневый", "Том", 5);
+    BigLong myBigLong = BigLong( "Британская", "Серый",  "Мурзик", 8);
+    BigPotat myBigPotat = BigPotat( "Персидская", "Белый",  "Васька", 10);
 
     myPotat.play();
     myLongTeen.walk();
