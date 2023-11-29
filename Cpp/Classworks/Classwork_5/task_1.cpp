@@ -114,7 +114,7 @@ class LongTeen: public Potat {
 
 class BigLong: public LongTeen{
     public:
-        BigLong(string& breed, string& color, string& name, int age): LongTeen(breed, (string &) color, name, age) {}
+        BigLong(string& breed, string& color, string& name, int age): LongTeen(breed, color, name, age) {}
 
         void sleep() override {
             cout << "Большая длинная кошка по кличке " << name << " спит" << endl;
