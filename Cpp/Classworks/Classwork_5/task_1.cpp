@@ -86,7 +86,7 @@ class Potat: public Cat{
             return curiosity;
         }
 
-        int getAge(){
+        int getAge() const{
             return age;
         }
 
@@ -95,8 +95,11 @@ class Potat: public Cat{
         }
 
 
-    Potat(string& breed, string& color, string& name, int age, bool curiosity = true):
-        Cat(breed, color), name(name), age(age), curiosity(curiosity){}
+    Potat(string& breed, string& color, string& name, int age, bool curiosity = true): Cat(breed, color){
+        this->name = name;
+        this->age = age;
+        this->curiosity = curiosity;
+    }
 };
 
 class LongTeen: public Potat {
