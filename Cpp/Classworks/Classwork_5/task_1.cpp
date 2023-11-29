@@ -90,7 +90,7 @@ class Potat: public Cat{
             return age;
         }
 
-        const string& getName(){
+        string& getName(){
             return name;
         }
 
