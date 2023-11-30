@@ -13,7 +13,6 @@
 обработки исключений при создании объектов Apple и Orange с неправильными значениями
 */
 
-
 #include "iostream"
 #include <stdexcept>
 
