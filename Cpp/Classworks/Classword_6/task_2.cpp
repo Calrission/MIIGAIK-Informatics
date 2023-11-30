@@ -33,7 +33,7 @@ class Product {
         }
 
         virtual double getTotalPrice(){
-            throw runtime_error("Calling origin virtual getTotalPrice");
+            return price * weight;
         }
 };
 
